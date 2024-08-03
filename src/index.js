@@ -69,7 +69,7 @@ module.exports = function toReadable(number) {
             str =
                 hundreds[Math.floor(number / 100)] +
                 " " +
-                dozens[Math.floor(number % 10)] +
+                dozens[Math.floor(number / 10) % 10] +
                 " " +
                 fromOneToTwenty[Math.floor(number % 10)];
         }
